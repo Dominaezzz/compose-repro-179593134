@@ -1,0 +1,1690 @@
+[
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$y1nkGmxBU0X2cmHfEzZ8AWik8YGSuerzbGUhzE3THCY",
+		"type": "m.room.message",
+		"content": {
+			"body": "Hello! I have a question, I have this code working if its run from a browser:\n \n```\nconst client = sdk.createClient({baseUrl: \"https://matrix-dev.mydomain.com\"});\nconst user2 = await client.login(\"org.matrix.login.jwt\", { token });                              \nconsole.log(user2);\n```\n\nBut if I run this code from nodejs. it throws an 'Error: Server returned 403 error'. I have the synapse server behind an AWS ALB. On node.js I got it working if I put the IP and port of the container like HTTP://123.123.123.123:8008, but I cannot rely on this as it will be changing over time. At first, I thought it was a reverse proxy issue, but it's working from the web browser and headers are being forwarded properly. I also have port 8448 forwarded to the container and open.\n\nI am thinking this might be some security setting in the configuration file but tbh I am a bit lost.\n ",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "<p>Hello! I have a question, I have this code working if its run from a browser:</p>\n<pre><code>const client = sdk.createClient({baseUrl: &quot;https://matrix-dev.mydomain.com&quot;});\nconst user2 = await client.login(&quot;org.matrix.login.jwt&quot;, { token });                              \nconsole.log(user2);\n</code></pre>\n<p>But if I run this code from nodejs. it throws an 'Error: Server returned 403 error'. I have the synapse server behind an AWS ALB. On node.js I got it working if I put the IP and port of the container like HTTP://123.123.123.123:8008, but I cannot rely on this as it will be changing over time. At first, I thought it was a reverse proxy issue, but it's working from the web browser and headers are being forwarded properly. I also have port 8448 forwarded to the container and open.</p>\n<p>I am thinking this might be some security setting in the configuration file but tbh I am a bit lost.</p>\n",
+			"msgtype": "m.text"
+		},
+		"sender": "@imekinox:matrix.org",
+		"origin_server_ts": 1626376731100,
+		"unsigned": {
+			"age": 28462
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$qwfO9ntgXOrSDKKcfpQdPg_ZIs8Y9CDTGCKRe21rBag",
+		"type": "m.room.message",
+		"content": {
+			"body": "thanks for the quick reply! ",
+			"msgtype": "m.text"
+		},
+		"sender": "@emha:matrix.org",
+		"origin_server_ts": 1626376024994,
+		"unsigned": {
+			"age": 606523
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$4ErEfJkZTyW9Yw0W_kG5lh0tGvhT17X-eNRT3IIjMH0",
+		"type": "m.room.message",
+		"content": {
+			"body": "(e.g if your names were vector paths rather than utf8 strings)",
+			"msgtype": "m.text"
+		},
+		"sender": "@x:riot.ovh",
+		"origin_server_ts": 1626374704660,
+		"unsigned": {
+			"age": 1926857
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$8tc_fD3QFyNbRxE50i9vluX8Zsu6o8jS4ZIR4N6uVWg",
+		"type": "m.room.message",
+		"content": {
+			"body": "else you might want to use `org.emha.name` or whatever",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "else you might want to use <code>org.emha.name</code> or whatever",
+			"msgtype": "m.text"
+		},
+		"sender": "@x:riot.ovh",
+		"origin_server_ts": 1626374676303,
+		"unsigned": {
+			"age": 1955214
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$1e5z5nXGKG1T0yvmVnX2pCjkQ5l7Mn3oFICfDQUjL20",
+		"type": "m.room.message",
+		"content": {
+			"body": "`m.*` things have a defined format and purpose, if you're going to comply with that then you can use it too",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "<code>m.*</code> things have a defined format and purpose, if you're going to comply with that then you can use it too",
+			"msgtype": "m.text"
+		},
+		"sender": "@x:riot.ovh",
+		"origin_server_ts": 1626374663369,
+		"unsigned": {
+			"age": 1968148
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$kzgdzh4yHmsyYwMRonlYOXBF1d3KskQakr1uGRY20rs",
+		"type": "m.room.message",
+		"content": {
+			"body": "Have a quick question about naming custom states. Is the `m.`, as in `m.room.name` for example,  reserved for official matrix states or Is it desired for other projects to also take on this naming scheme? ",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "Have a quick question about naming custom states. Is the <code>m.</code>, as in <code>m.room.name</code> for example,  reserved for official matrix states or Is it desired for other projects to also take on this naming scheme?",
+			"msgtype": "m.text"
+		},
+		"sender": "@emha:matrix.org",
+		"origin_server_ts": 1626374479394,
+		"unsigned": {
+			"age": 2152123
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$9YgdKy3TWJbaiIxloGdefMbbPBLrTGA-SoLi5EcBXo0",
+		"type": "m.room.member",
+		"content": {
+			"displayname": "emha",
+			"membership": "join"
+		},
+		"sender": "@emha:matrix.org",
+		"origin_server_ts": 1626373923581,
+		"unsigned": {
+			"age": 2707936
+		},
+		"state_key": "@emha:matrix.org",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$wRhQ8A0jyaC9y0K1Nq8ecLrPB-9548BViFJXzdRG7EY",
+		"type": "m.room.member",
+		"content": {
+			"avatar_url": "mxc://matrix.org/GNgNkzEOyGJktySQPdwYECLS",
+			"displayname": "conphiz",
+			"membership": "join"
+		},
+		"sender": "@conphiz:matrix.org",
+		"origin_server_ts": 1626369572461,
+		"unsigned": {
+			"age": 7059056
+		},
+		"state_key": "@conphiz:matrix.org",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$eiA-qPBLZ7TnaxaNkx8eR7rkSbiYUAsZrQhujEsZVRY",
+		"type": "m.room.member",
+		"content": {
+			"avatar_url": "mxc://matrix.org/YsMmlvGvDByojlKdmOVEcnGT",
+			"displayname": "Robert Long",
+			"membership": "join"
+		},
+		"sender": "@arobertlong:matrix.org",
+		"origin_server_ts": 1626367213493,
+		"unsigned": {
+			"replaces_state": "$56fmmpAGpDDclewlPgTeaFZUQzSyEC-RUp2GYcrlpJc",
+			"prev_content": {
+				"avatar_url": "mxc://matrix.org/YsMmlvGvDByojlKdmOVEcnGT",
+				"displayname": "arobertlong",
+				"membership": "join"
+			},
+			"prev_sender": "@arobertlong:matrix.org",
+			"age": 9418024
+		},
+		"state_key": "@arobertlong:matrix.org",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$u4L5KxWr733e14iq-gN6nk-fZXqKQNSEBvnYg53UkB0",
+		"type": "m.room.message",
+		"content": {
+			"body": "like this :session.currentSession.getSessionId",
+			"msgtype": "m.text"
+		},
+		"sender": "@prithwiraj:matrix.org",
+		"origin_server_ts": 1626352731444,
+		"unsigned": {
+			"age": 23900073
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$-SrORh9xPdaIQiEG-ZcgdGD4Obrga7cVDlx7wrhtqaE",
+		"type": "m.room.message",
+		"content": {
+			"body": "session id u will get from Session class in matrix sdk",
+			"msgtype": "m.text"
+		},
+		"sender": "@prithwiraj:matrix.org",
+		"origin_server_ts": 1626352700801,
+		"unsigned": {
+			"age": 23930716
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$x5e_6DQ9SkfHtLYTLSSf4gRtvDK2ihWoMTxZrA_pte4",
+		"type": "m.room.message",
+		"content": {
+			"body": "what are the other fields except username and password ?",
+			"msgtype": "m.text"
+		},
+		"sender": "@nizthedev:matrix.org",
+		"origin_server_ts": 1626352335158,
+		"unsigned": {
+			"age": 24428315
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$2C4Hp1-wNJ8q0xRxMhMluyNjMR1AjR3UovM_6v4i_D4",
+		"type": "m.room.message",
+		"content": {
+			"body": "matrix.register(\n      username,\n      password,\n      sessionId,\n      auth,\n      bindThreepids,\n      guestAccessToken,\n      false\n    )",
+			"msgtype": "m.text"
+		},
+		"sender": "@nizthedev:matrix.org",
+		"origin_server_ts": 1626352304141,
+		"unsigned": {
+			"age": 24459332
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$dsj1gmZWH7bfhqqoHTRHfYwrnMvqg0gS-cWb1TclshM",
+		"type": "m.room.message",
+		"content": {
+			"body": "Need help with sdk.register() function",
+			"msgtype": "m.text"
+		},
+		"sender": "@nizthedev:matrix.org",
+		"origin_server_ts": 1626352202267,
+		"unsigned": {
+			"age": 24561206
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$u7NtemsT-0Y2twPEAPjQ8v1Dr3bv1ubKOVRjvWrihlk",
+		"type": "m.room.member",
+		"content": {
+			"displayname": "Niz",
+			"membership": "join"
+		},
+		"sender": "@nizthedev:matrix.org",
+		"origin_server_ts": 1626352081714,
+		"unsigned": {
+			"age": 24549803
+		},
+		"state_key": "@nizthedev:matrix.org",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$FYhz2JdeNlOmG_qZ0AEs8RAB-qQPPhb0OosuQE1oDHM",
+		"type": "m.room.message",
+		"content": {
+			"body": "> <@adb:adb.sh> so you have problems with E2EE? ig, i can't help you then.\n\nanyway thank u",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "<mx-reply><blockquote><a href=\"https://matrix.to/#/!jxlRxnrZCsjpjDubDX:matrix.org/$Jh8Jj9GdhJ1atgzOnmNijFiqAP7VTanuorecWwBTc-E?via=matrix.org&via=libera.chat&via=privacytools.io\">In reply to</a> <a href=\"https://matrix.to/#/@adb:adb.sh\">@adb:adb.sh</a><br>so you have problems with E2EE? ig, i can&#39;t help you then.</blockquote></mx-reply>anyway thank u",
+			"m.relates_to": {
+				"m.in_reply_to": {
+					"event_id": "$Jh8Jj9GdhJ1atgzOnmNijFiqAP7VTanuorecWwBTc-E"
+				}
+			},
+			"msgtype": "m.text"
+		},
+		"sender": "@prithwiraj:matrix.org",
+		"origin_server_ts": 1626351757552,
+		"unsigned": {
+			"age": 25005921
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$Jh8Jj9GdhJ1atgzOnmNijFiqAP7VTanuorecWwBTc-E",
+		"type": "m.room.message",
+		"content": {
+			"body": "so you have problems with E2EE? ig, i can't help you then.",
+			"m.relates_to": {},
+			"msgtype": "m.text"
+		},
+		"sender": "@adb:adb.sh",
+		"origin_server_ts": 1626351588332,
+		"unsigned": {
+			"age": 25175141
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$d8Idv_MzzIHuyluYc82q7C4fz0klbwcKUWxzM16nSo8",
+		"type": "m.room.message",
+		"content": {
+			"body": "> <@adb:adb.sh> ah, now i got you. i thought your problem was about parsing the mxc url.\n\nAny suggestion for private url",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "<mx-reply><blockquote><a href=\"https://matrix.to/#/!jxlRxnrZCsjpjDubDX:matrix.org/$Z0GZJlr5iK2c5DJn3c6hyKSSD-qiwil-xdsi9BG7y_g?via=matrix.org&via=libera.chat&via=privacytools.io\">In reply to</a> <a href=\"https://matrix.to/#/@adb:adb.sh\">@adb:adb.sh</a><br>ah, now i got you. i thought your problem was about parsing the mxc url.<br/></blockquote></mx-reply>Any suggestion for private url",
+			"m.relates_to": {
+				"m.in_reply_to": {
+					"event_id": "$Z0GZJlr5iK2c5DJn3c6hyKSSD-qiwil-xdsi9BG7y_g"
+				}
+			},
+			"msgtype": "m.text"
+		},
+		"sender": "@prithwiraj:matrix.org",
+		"origin_server_ts": 1626351502861,
+		"unsigned": {
+			"age": 25260612
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$wdX7f7yCo1aFCPH6vp85fZXtCbDYJt34rYz37wPNyGc",
+		"type": "m.room.message",
+		"content": {
+			"body": "parsing public url is working fine",
+			"msgtype": "m.text"
+		},
+		"sender": "@prithwiraj:matrix.org",
+		"origin_server_ts": 1626351463267,
+		"unsigned": {
+			"age": 25300206
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$YVzUuDjhbt-3oV7WT6E5B1tjY7y8tK6MzZrpQSqAXD8",
+		"type": "m.room.message",
+		"content": {
+			"body": "yeah",
+			"msgtype": "m.text"
+		},
+		"sender": "@prithwiraj:matrix.org",
+		"origin_server_ts": 1626351436517,
+		"unsigned": {
+			"age": 25326956
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$Z0GZJlr5iK2c5DJn3c6hyKSSD-qiwil-xdsi9BG7y_g",
+		"type": "m.room.message",
+		"content": {
+			"body": "ah, now i got you. i thought your problem was about parsing the mxc url.\n",
+			"m.relates_to": {},
+			"msgtype": "m.text"
+		},
+		"sender": "@adb:adb.sh",
+		"origin_server_ts": 1626351406386,
+		"unsigned": {
+			"age": 25357087
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$7vw8s8ALJaJuysHz3Jji9MUFKYxxDmYUycMMeZg9-qg",
+		"type": "m.room.message",
+		"content": {
+			"body": "but problem is when the imageMessage is from private group or one to one conversation",
+			"msgtype": "m.text"
+		},
+		"sender": "@prithwiraj:matrix.org",
+		"origin_server_ts": 1626351229891,
+		"unsigned": {
+			"age": 25533582
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$-74uXwgokdrXCQfKA-kjxSLsrItzo8Pf-ReULIGxNPI",
+		"type": "m.room.message",
+		"content": {
+			"body": "if the image url is from public group i am easily able to load",
+			"msgtype": "m.text"
+		},
+		"sender": "@prithwiraj:matrix.org",
+		"origin_server_ts": 1626351211877,
+		"unsigned": {
+			"age": 25551596
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$HIModORiFs4cV8gTF6uImh_y29kHOvlyt4HkXZHUOic",
+		"type": "m.room.message",
+		"content": {
+			"body": "no can u please explain",
+			"msgtype": "m.text"
+		},
+		"sender": "@prithwiraj:matrix.org",
+		"origin_server_ts": 1626351140450,
+		"unsigned": {
+			"age": 25623023
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$yti_2Tq-GpQC5UYy_gDMvCmDIUwwqmnrceAvx_6okPQ",
+		"type": "m.room.message",
+		"content": {
+			"body": "have you tried `contentManager.getDownloadableUrl(mxc);` ?",
+			"m.relates_to": {},
+			"msgtype": "m.text"
+		},
+		"sender": "@adb:adb.sh",
+		"origin_server_ts": 1626351010829,
+		"unsigned": {
+			"age": 25752644
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$kJf8GWlbJkzinoNuesjmfCBHuDtq8RjSoRqdhAXzYSM",
+		"type": "m.room.message",
+		"content": {
+			"body": "hi all, any one has experience with android matrix sdk?\nI am not able to decrypt the image url",
+			"msgtype": "m.text"
+		},
+		"sender": "@prithwiraj:matrix.org",
+		"origin_server_ts": 1626331504917,
+		"unsigned": {
+			"age": 45258556
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$4ZtrMs3bsDKQLnyJ5Lt8BmK4F9qkoPbMDDOa_uP1axY",
+		"type": "m.room.member",
+		"content": {
+			"avatar_url": "mxc://matrix.org/QMXWEHDpuNIkcHdTiyOCpMxD",
+			"displayname": "prithwiraj",
+			"membership": "join"
+		},
+		"sender": "@prithwiraj:matrix.org",
+		"origin_server_ts": 1626331430459,
+		"unsigned": {
+			"age": 45201058
+		},
+		"state_key": "@prithwiraj:matrix.org",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$0bm_YJXwlq1pXNKZqC6vENsSXnWRuMIwCI97J6jxc6Y",
+		"type": "m.room.member",
+		"content": {
+			"displayname": "Chimbili Pavan",
+			"membership": "join"
+		},
+		"sender": "@chimbili_pavan_:matrix.org",
+		"origin_server_ts": 1626331339149,
+		"unsigned": {
+			"age": 45292368
+		},
+		"state_key": "@chimbili_pavan_:matrix.org",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$ggI7Z7RDk-hnpzRqPrE6RSPBhu52PUEw6frXJ_fe7DI",
+		"type": "m.room.member",
+		"content": {
+			"avatar_url": "mxc://uhoreg.ca/JbcxMQHvPoPUoRkwQRdmwXKm",
+			"displayname": "uhoreg (away)",
+			"membership": "join"
+		},
+		"sender": "@hubert:uhoreg.ca",
+		"origin_server_ts": 1626319415274,
+		"unsigned": {
+			"replaces_state": "$BCCblQTngLNEnnqxzBJ4CLfh_cO1BfG93O71VmY-iXo",
+			"prev_content": {
+				"avatar_url": "mxc://uhoreg.ca/JbcxMQHvPoPUoRkwQRdmwXKm",
+				"displayname": "uhoreg💉💉",
+				"membership": "join"
+			},
+			"prev_sender": "@hubert:uhoreg.ca",
+			"age": 57216243
+		},
+		"state_key": "@hubert:uhoreg.ca",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$x4jHakHtb3Poxo_S_TIVDQtHdp2DRSYcpQ0K2texz-s",
+		"type": "m.room.member",
+		"content": {
+			"displayname": "Gadget",
+			"membership": "join"
+		},
+		"sender": "@gadgetusaf:secret.gadgetusaf.com",
+		"origin_server_ts": 1626302139988,
+		"unsigned": {
+			"replaces_state": "$NCI9x1lxdv2F7bOnETpNcoleSznoJBNPVZ-1FUtoE-U",
+			"age": 74491529
+		},
+		"state_key": "@gadgetusaf:secret.gadgetusaf.com",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$NCI9x1lxdv2F7bOnETpNcoleSznoJBNPVZ-1FUtoE-U",
+		"type": "m.room.member",
+		"content": {
+			"displayname": "Server Owner",
+			"membership": "join"
+		},
+		"sender": "@gadgetusaf:secret.gadgetusaf.com",
+		"origin_server_ts": 1626302114359,
+		"unsigned": {
+			"replaces_state": "$cMhGOEG8U9PoFWrC-atwcRkvtcQHnRJnYPWmQRJWvRk",
+			"prev_content": {
+				"avatar_url": null,
+				"displayname": "Gadget",
+				"membership": "join"
+			},
+			"prev_sender": "@gadgetusaf:secret.gadgetusaf.com",
+			"age": 74649114
+		},
+		"state_key": "@gadgetusaf:secret.gadgetusaf.com",
+		"prev_content": {
+			"avatar_url": null,
+			"displayname": "Gadget",
+			"membership": "join"
+		}
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$Uinzjzpy-n1DUd7ntqVt2MEpXBj9djKI0exY9rlCktY",
+		"type": "m.room.message",
+		"content": {
+			"body": "added in `origin_server_ts` and now `{'errcode': 'M_UNAUTHORIZED', 'error': \"Invalid signature for server konqi.work with key ed25519:a_KAgK: Unable to verify signature for konqi.work: <class 'nacl.exceptions.BadSignatureError'> Signature was forged or corrupt\"}`",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "added in <code>origin_server_ts</code> and now <code>{'errcode': 'M_UNAUTHORIZED', 'error': &quot;Invalid signature for server konqi.work with key ed25519:a_KAgK: Unable to verify signature for konqi.work: &lt;class 'nacl.exceptions.BadSignatureError'&gt; Signature was forged or corrupt&quot;}</code>",
+			"msgtype": "m.text"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626297691578,
+		"unsigned": {
+			"age": 79078274
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$GWFsRXlIRzExiUijo1bgtKelwlcfU7ARZDjL04Lqdt8",
+		"type": "m.room.message",
+		"content": {
+			"body": "oh, hmm",
+			"msgtype": "m.text"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626297681346,
+		"unsigned": {
+			"age": 79088506
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$hkEld7yTSCghJfjvIBBLCiBf6cqbTVkb_xKSA1mBZAk",
+		"type": "m.room.message",
+		"content": {
+			"body": "```\nunsigned_json = {\n    \"method\": \"PUT\",\n    \"uri\": \"/_matrix/federation/v1/send/%s\" % RANDOM_TXN,\n    \"origin\": \"konqi.work\",\n    \"destination\": \"matrix.org\",\n    \"content\": {\n        \"edus\": [\n            {\n                \"edu_type\": \"m.typing\",\n                \"content\": {\n                    \"room_id\": \"!ehXvUhWNASUkSLvAGP:matrix.org\",\n                    \"user_id\": \"@dolphin:konqi.work\",\n                    \"typing\": True\n                }\n            }\n        ]\n    }\n}\n```",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "<pre><code>unsigned_json = {\n    &quot;method&quot;: &quot;PUT&quot;,\n    &quot;uri&quot;: &quot;/_matrix/federation/v1/send/%s&quot; % RANDOM_TXN,\n    &quot;origin&quot;: &quot;konqi.work&quot;,\n    &quot;destination&quot;: &quot;matrix.org&quot;,\n    &quot;content&quot;: {\n        &quot;edus&quot;: [\n            {\n                &quot;edu_type&quot;: &quot;m.typing&quot;,\n                &quot;content&quot;: {\n                    &quot;room_id&quot;: &quot;!ehXvUhWNASUkSLvAGP:matrix.org&quot;,\n                    &quot;user_id&quot;: &quot;@dolphin:konqi.work&quot;,\n                    &quot;typing&quot;: True\n                }\n            }\n        ]\n    }\n}\n</code></pre>\n",
+			"msgtype": "m.text"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626297550446,
+		"unsigned": {
+			"age": 79219406
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$em8lbj4F4YUpO1XqNSg6z3G-32HYPljziRcyuvyJd8A",
+		"type": "m.room.message",
+		"content": {
+			"body": "trying to matrix.org...",
+			"msgtype": "m.text"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626297533870,
+		"unsigned": {
+			"age": 79235982
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$vaFWOtPOxpeU3T5NIXmVCjoq7OdZ-f46wGPfNQX2lZc",
+		"type": "m.room.message",
+		"content": {
+			"body": "uhoreg💉💉: yeah, weird, getting an internal server error now...",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "<a href=\"https://matrix.to/#/@hubert:uhoreg.ca\">uhoreg💉💉</a>: yeah, weird, getting an internal server error now...",
+			"msgtype": "m.text"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626297519621,
+		"unsigned": {
+			"age": 79250231
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$2mjisTmailHkGhZ3Tp60Hra9qthh20L9i3b8wEAbVNQ",
+		"type": "m.room.message",
+		"content": {
+			"body": " * but not correctly, though",
+			"m.new_content": {
+				"body": "but not correctly, though",
+				"msgtype": "m.text"
+			},
+			"m.relates_to": {
+				"event_id": "$tuAFfH9MUODJeF4RzkZ0UKbv-mj1yShnC5NQl93tMy4",
+				"rel_type": "m.replace"
+			},
+			"msgtype": "m.text"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626297223148,
+		"unsigned": {
+			"age": 79546704
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$tuAFfH9MUODJeF4RzkZ0UKbv-mj1yShnC5NQl93tMy4",
+		"type": "m.room.message",
+		"content": {
+			"body": "but not correctly, though",
+			"msgtype": "m.text"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626297220437,
+		"unsigned": {
+			"age": 79549415,
+			"m.relations": {
+				"m.replace": {
+					"event_id": "$2mjisTmailHkGhZ3Tp60Hra9qthh20L9i3b8wEAbVNQ",
+					"origin_server_ts": 1626297223148,
+					"sender": "@dolphin:konqi.work"
+				}
+			}
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$unO0CTq0IB83T9POd4d3zPkPPNO-7eySTKmubhYl5M0",
+		"type": "m.room.message",
+		"content": {
+			"body": "`{'errcode': 'M_UNKNOWN', 'error': 'Internal server error'}` yeah, works...",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "<code>{'errcode': 'M_UNKNOWN', 'error': 'Internal server error'}</code> yeah, works...",
+			"msgtype": "m.text"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626297202973,
+		"unsigned": {
+			"age": 79566879
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$cutBkw50AV92qEec4LCbl6Fy9DZSfg0ZhkTEheIrzMU",
+		"type": "m.room.message",
+		"content": {
+			"body": "(I managed to get request signing working in my Elixir library just the other day.)",
+			"msgtype": "m.text"
+		},
+		"sender": "@hubert:uhoreg.ca",
+		"origin_server_ts": 1626296771235,
+		"unsigned": {
+			"age": 79998617
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$L-xk2smoPnKvUFm8amJ9dXaji53bJQSVQDm7rEcRAvc",
+		"type": "m.room.message",
+		"content": {
+			"body": "Try sending the request to another server that you control, but add some logging lines on the other server to see what it's expecting. e.g. see what `json_object` is in the `process_request` function in `synapse/crypto/keyring.py`, and make sure it matches your `signed_json`",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "Try sending the request to another server that you control, but add some logging lines on the other server to see what it's expecting. e.g. see what <code>json_object</code> is in the <code>process_request</code> function in <code>synapse/crypto/keyring.py</code>, and make sure it matches your <code>signed_json</code>",
+			"msgtype": "m.text"
+		},
+		"sender": "@hubert:uhoreg.ca",
+		"origin_server_ts": 1626296640324,
+		"unsigned": {
+			"age": 80129528
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$tJRav5HbTB_vGEAGNDn8tiHENnVTtkJeCCNPPWy2pnU",
+		"type": "m.room.message",
+		"content": {
+			"body": "I did go through the synapse codebase to see if I was encoding the verification key correctly",
+			"msgtype": "m.text"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626296471646,
+		"unsigned": {
+			"age": 80298206
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$5YlmAHWwg_0SF6ViRVtBsVOpABeHIszgibr34qT06VI",
+		"type": "m.room.message",
+		"content": {
+			"body": "key was pulled straight from the HS, so that shouldn't be an issue",
+			"msgtype": "m.text"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626296275802,
+		"unsigned": {
+			"age": 80494050
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$lyn1s0NqarN7gxjDXIkgQxfCvUTCT7SOEEwSBizuqAE",
+		"type": "m.room.message",
+		"content": {
+			"body": "`{'errcode': 'M_UNAUTHORIZED', 'error': \"Invalid signature for server konqi.work with key ed25519:a_KAgK: Unable to verify signature for konqi.work: <class 'nacl.exceptions.BadSignatureError'> Signature was forged or corrupt\"}` hmm",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "<code>{'errcode': 'M_UNAUTHORIZED', 'error': &quot;Invalid signature for server konqi.work with key ed25519:a_KAgK: Unable to verify signature for konqi.work: &lt;class 'nacl.exceptions.BadSignatureError'&gt; Signature was forged or corrupt&quot;}</code> hmm",
+			"msgtype": "m.text"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626296247647,
+		"unsigned": {
+			"age": 80522205
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$SnauEEgJ2H6uhll0hnRhYDUdxcQHNRjACKtA4ZWrwzo",
+		"type": "m.room.message",
+		"content": {
+			"body": "Yes, you need the `Authorization` header.  But the `json=signed_json` in the `session.put` call should be `json=unsigned_json[\"content\"]`, if I understand that function correctly.",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "Yes, you need the <code>Authorization</code> header.  But the <code>json=signed_json</code> in the <code>session.put</code> call should be <code>json=unsigned_json[&quot;content&quot;]</code>, if I understand that function correctly.",
+			"msgtype": "m.text"
+		},
+		"sender": "@hubert:uhoreg.ca",
+		"origin_server_ts": 1626295640369,
+		"unsigned": {
+			"age": 81129483
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$gCnqVbyz-QX3z4OP8_-LCq5wVG0_aDE1g3lyY1DLcJM",
+		"type": "m.room.message",
+		"content": {
+			"body": "uhoreg💉💉: but if I try otherwise, it requires an `Authorization` header",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "<a href=\"https://matrix.to/#/@hubert:uhoreg.ca\">uhoreg💉💉</a>: but if I try otherwise, it requires an <code>Authorization</code> header",
+			"msgtype": "m.text"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626295565682,
+		"unsigned": {
+			"age": 81204170
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$6M-fRR8vau8CDsS0x27stHvJ8bUjsVkzRtz0ymhM0Zo",
+		"type": "m.room.message",
+		"content": {
+			"body": "hmm",
+			"msgtype": "m.text"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626295535768,
+		"unsigned": {
+			"age": 81234084
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$7Q_F4G2mOwowVXNYU8zTdVY8cfdXXWCy2vIoPhoMhOQ",
+		"type": "m.room.message",
+		"content": {
+			"body": " * Oh, not even that.  You should be sending just the \"content\" property.  So, `unsigned_json[\"content\"]` I think is how it is in Python",
+			"format": "org.matrix.custom.html",
+			"formatted_body": " * Oh, not even that.  You should be sending just the &quot;content&quot; property.  So, <code>unsigned_json[&quot;content&quot;]</code> I think is how it is in Python",
+			"m.new_content": {
+				"body": "Oh, not even that.  You should be sending just the \"content\" property.  So, `unsigned_json[\"content\"]` I think is how it is in Python",
+				"format": "org.matrix.custom.html",
+				"formatted_body": "Oh, not even that.  You should be sending just the &quot;content&quot; property.  So, <code>unsigned_json[&quot;content&quot;]</code> I think is how it is in Python",
+				"msgtype": "m.text"
+			},
+			"m.relates_to": {
+				"event_id": "$xx4NMC1swLgqtis4zo2U_pJH7iG-ZcB_jREgpRsg5vY",
+				"rel_type": "m.replace"
+			},
+			"msgtype": "m.text"
+		},
+		"sender": "@hubert:uhoreg.ca",
+		"origin_server_ts": 1626295523838,
+		"unsigned": {
+			"age": 81246014
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$xx4NMC1swLgqtis4zo2U_pJH7iG-ZcB_jREgpRsg5vY",
+		"type": "m.room.message",
+		"content": {
+			"body": "Oh, not even that.  You should be sending just the \"content\" property.  So, `unsigned_json[\"content\"]` I think is how it is in Python",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "Oh, not even that.  You should be sending just the &quot;content&quot; property.  So, <code>unsigned_json[&quot;content&quot;]</code> I think is how it is in Python",
+			"msgtype": "m.text"
+		},
+		"sender": "@hubert:uhoreg.ca",
+		"origin_server_ts": 1626295512926,
+		"unsigned": {
+			"age": 81256926,
+			"m.relations": {
+				"m.replace": {
+					"event_id": "$7Q_F4G2mOwowVXNYU8zTdVY8cfdXXWCy2vIoPhoMhOQ",
+					"origin_server_ts": 1626295523838,
+					"sender": "@hubert:uhoreg.ca"
+				}
+			}
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$c4rUlhhvHe7JDAoe9XzPVZnOXyU5-0Qhcf0V4vZM1wo",
+		"type": "m.room.message",
+		"content": {
+			"body": "Oh, and you should be sending the unsigned json, rather than the signed json",
+			"msgtype": "m.text"
+		},
+		"sender": "@hubert:uhoreg.ca",
+		"origin_server_ts": 1626295403940,
+		"unsigned": {
+			"age": 81365912
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$TfUEx7OcpKP7N73y5iucSzQVonVqR_TEDyIbqB1hhgU",
+		"type": "m.room.message",
+		"content": {
+			"body": "And you have `\"destination\": \"matrix.org\"`, but it looks like you're actually sending the request to `matrix.konqi.work`",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "And you have <code>&quot;destination&quot;: &quot;matrix.org&quot;</code>, but it looks like you're actually sending the request to <code>matrix.konqi.work</code>",
+			"msgtype": "m.text"
+		},
+		"sender": "@hubert:uhoreg.ca",
+		"origin_server_ts": 1626295289994,
+		"unsigned": {
+			"age": 81479858
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$rnXae_uh_r-NqNzaeSJyfKLDku66veKzihZSjnuLGqE",
+		"type": "m.room.message",
+		"content": {
+			"body": "Also, it should be `\"method\": \"PUT\"` instead of `\"GET\"`",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "Also, it should be <code>&quot;method&quot;: &quot;PUT&quot;</code> instead of <code>&quot;GET&quot;</code>",
+			"msgtype": "m.text"
+		},
+		"sender": "@hubert:uhoreg.ca",
+		"origin_server_ts": 1626295067371,
+		"unsigned": {
+			"age": 81706529
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$3fNGEF3ABni7uCnqwARQ1DsVwjoKhttwL_pIzi2SNL4",
+		"type": "m.room.message",
+		"content": {
+			"body": "Are you actually doing `\"uri\": \"/target\"`, or is `/target` replaced by the actual URL?",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "Are you actually doing <code>&quot;uri&quot;: &quot;/target&quot;</code>, or is <code>/target</code> replaced by the actual URL?",
+			"msgtype": "m.text"
+		},
+		"sender": "@hubert:uhoreg.ca",
+		"origin_server_ts": 1626295037059,
+		"unsigned": {
+			"age": 81736841
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$YP5RYPt1Fbjicb8-y2uAAVyLtXRLGg0-JmlQPb8CAEA",
+		"type": "m.room.message",
+		"content": {
+			"body": " * Hello, so, I'm unable to sign an EDU successfully. I'm getting `{'errcode': 'M_UNAUTHORIZED', 'error': \"Invalid signature for server konqi.work with key ed25519:a_KAgK: Unable to verify signature for konqi.work: <class 'nacl.exceptions.BadSignatureError'> Signature was forged or corrupt\"}`, with the following Python v3 code:\n```\nimport requests\nimport signedjson.key\nimport signedjson.sign\n\nimport dolphin.random\n\nsession = requests.session()\nRANDOM_TXN = dolphin.random.random_string(5)\n\nunsigned_json = {\n    \"method\": \"GET\",\n    \"uri\": \"/target\",\n    \"origin\": \"konqi.work\",\n    \"destination\": \"matrix.org\",\n    \"content\": {\n        \"origin\": \"konqi.work\",\n        \"origin_server_ts\": 0,\n        \"edus\": [\n            {\n                \"edu_type\": \"m.typing\",\n                \"content\": {\n                    \"room_id\": \"!ehXvUhWNASUkSLvAGP:matrix.org\",\n                    \"user_id\": \"@dolphin:konqi.work\",\n                    \"typing\": True\n                }\n            }\n        ]\n    }\n}\nsigning_key = signedjson.key.decode_signing_key_base64(algorithm=\"ed25519\", version=\"a_KAgK\",\n                                                       key_base64=\"REDACTED\")\nsigned_json = signedjson.sign.sign_json(unsigned_json, \"konqi.work\",\n                                        signing_key=signing_key)\nencoded_verify_key = signedjson.key.encode_verify_key_base64(signedjson.key.get_verify_key(signing_key))\nprint(signed_json[\"signatures\"][\"konqi.work\"][\"ed25519:a_KAgK\"])\nprint(session.put(\"https://matrix.konqi.work/_matrix/federation/v1/send/%s\" % RANDOM_TXN, json=signed_json, headers={\n    \"Authorization\": \"X-Matrix origin=%s,key=\\\"%s\\\",sig=\\\"%s\\\"\" % (\n        \"konqi.work\", \"ed25519:a_KAgK\", signed_json[\"signatures\"][\"konqi.work\"][\"ed25519:a_KAgK\"]\n    )\n}).json())\n```",
+			"format": "org.matrix.custom.html",
+			"formatted_body": " * <p>Hello, so, I'm unable to sign an EDU successfully. I'm getting <code>{'errcode': 'M_UNAUTHORIZED', 'error': &quot;Invalid signature for server konqi.work with key ed25519:a_KAgK: Unable to verify signature for konqi.work: &lt;class 'nacl.exceptions.BadSignatureError'&gt; Signature was forged or corrupt&quot;}</code>, with the following Python v3 code:</p>\n<pre><code>import requests\nimport signedjson.key\nimport signedjson.sign\n\nimport dolphin.random\n\nsession = requests.session()\nRANDOM_TXN = dolphin.random.random_string(5)\n\nunsigned_json = {\n    &quot;method&quot;: &quot;GET&quot;,\n    &quot;uri&quot;: &quot;/target&quot;,\n    &quot;origin&quot;: &quot;konqi.work&quot;,\n    &quot;destination&quot;: &quot;matrix.org&quot;,\n    &quot;content&quot;: {\n        &quot;origin&quot;: &quot;konqi.work&quot;,\n        &quot;origin_server_ts&quot;: 0,\n        &quot;edus&quot;: [\n            {\n                &quot;edu_type&quot;: &quot;m.typing&quot;,\n                &quot;content&quot;: {\n                    &quot;room_id&quot;: &quot;!ehXvUhWNASUkSLvAGP:matrix.org&quot;,\n                    &quot;user_id&quot;: &quot;@dolphin:konqi.work&quot;,\n                    &quot;typing&quot;: True\n                }\n            }\n        ]\n    }\n}\nsigning_key = signedjson.key.decode_signing_key_base64(algorithm=&quot;ed25519&quot;, version=&quot;a_KAgK&quot;,\n                                                       key_base64=&quot;REDACTED&quot;)\nsigned_json = signedjson.sign.sign_json(unsigned_json, &quot;konqi.work&quot;,\n                                        signing_key=signing_key)\nencoded_verify_key = signedjson.key.encode_verify_key_base64(signedjson.key.get_verify_key(signing_key))\nprint(signed_json[&quot;signatures&quot;][&quot;konqi.work&quot;][&quot;ed25519:a_KAgK&quot;])\nprint(session.put(&quot;https://matrix.konqi.work/_matrix/federation/v1/send/%s&quot; % RANDOM_TXN, json=signed_json, headers={\n    &quot;Authorization&quot;: &quot;X-Matrix origin=%s,key=\\&quot;%s\\&quot;,sig=\\&quot;%s\\&quot;&quot; % (\n        &quot;konqi.work&quot;, &quot;ed25519:a_KAgK&quot;, signed_json[&quot;signatures&quot;][&quot;konqi.work&quot;][&quot;ed25519:a_KAgK&quot;]\n    )\n}).json())\n</code></pre>\n",
+			"m.new_content": {
+				"body": "Hello, so, I'm unable to sign an EDU successfully. I'm getting `{'errcode': 'M_UNAUTHORIZED', 'error': \"Invalid signature for server konqi.work with key ed25519:a_KAgK: Unable to verify signature for konqi.work: <class 'nacl.exceptions.BadSignatureError'> Signature was forged or corrupt\"}`, with the following Python v3 code:\n```\nimport requests\nimport signedjson.key\nimport signedjson.sign\n\nimport dolphin.random\n\nsession = requests.session()\nRANDOM_TXN = dolphin.random.random_string(5)\n\nunsigned_json = {\n    \"method\": \"GET\",\n    \"uri\": \"/target\",\n    \"origin\": \"konqi.work\",\n    \"destination\": \"matrix.org\",\n    \"content\": {\n        \"origin\": \"konqi.work\",\n        \"origin_server_ts\": 0,\n        \"edus\": [\n            {\n                \"edu_type\": \"m.typing\",\n                \"content\": {\n                    \"room_id\": \"!ehXvUhWNASUkSLvAGP:matrix.org\",\n                    \"user_id\": \"@dolphin:konqi.work\",\n                    \"typing\": True\n                }\n            }\n        ]\n    }\n}\nsigning_key = signedjson.key.decode_signing_key_base64(algorithm=\"ed25519\", version=\"a_KAgK\",\n                                                       key_base64=\"REDACTED\")\nsigned_json = signedjson.sign.sign_json(unsigned_json, \"konqi.work\",\n                                        signing_key=signing_key)\nencoded_verify_key = signedjson.key.encode_verify_key_base64(signedjson.key.get_verify_key(signing_key))\nprint(signed_json[\"signatures\"][\"konqi.work\"][\"ed25519:a_KAgK\"])\nprint(session.put(\"https://matrix.konqi.work/_matrix/federation/v1/send/%s\" % RANDOM_TXN, json=signed_json, headers={\n    \"Authorization\": \"X-Matrix origin=%s,key=\\\"%s\\\",sig=\\\"%s\\\"\" % (\n        \"konqi.work\", \"ed25519:a_KAgK\", signed_json[\"signatures\"][\"konqi.work\"][\"ed25519:a_KAgK\"]\n    )\n}).json())\n```",
+				"format": "org.matrix.custom.html",
+				"formatted_body": "<p>Hello, so, I'm unable to sign an EDU successfully. I'm getting <code>{'errcode': 'M_UNAUTHORIZED', 'error': &quot;Invalid signature for server konqi.work with key ed25519:a_KAgK: Unable to verify signature for konqi.work: &lt;class 'nacl.exceptions.BadSignatureError'&gt; Signature was forged or corrupt&quot;}</code>, with the following Python v3 code:</p>\n<pre><code>import requests\nimport signedjson.key\nimport signedjson.sign\n\nimport dolphin.random\n\nsession = requests.session()\nRANDOM_TXN = dolphin.random.random_string(5)\n\nunsigned_json = {\n    &quot;method&quot;: &quot;GET&quot;,\n    &quot;uri&quot;: &quot;/target&quot;,\n    &quot;origin&quot;: &quot;konqi.work&quot;,\n    &quot;destination&quot;: &quot;matrix.org&quot;,\n    &quot;content&quot;: {\n        &quot;origin&quot;: &quot;konqi.work&quot;,\n        &quot;origin_server_ts&quot;: 0,\n        &quot;edus&quot;: [\n            {\n                &quot;edu_type&quot;: &quot;m.typing&quot;,\n                &quot;content&quot;: {\n                    &quot;room_id&quot;: &quot;!ehXvUhWNASUkSLvAGP:matrix.org&quot;,\n                    &quot;user_id&quot;: &quot;@dolphin:konqi.work&quot;,\n                    &quot;typing&quot;: True\n                }\n            }\n        ]\n    }\n}\nsigning_key = signedjson.key.decode_signing_key_base64(algorithm=&quot;ed25519&quot;, version=&quot;a_KAgK&quot;,\n                                                       key_base64=&quot;REDACTED&quot;)\nsigned_json = signedjson.sign.sign_json(unsigned_json, &quot;konqi.work&quot;,\n                                        signing_key=signing_key)\nencoded_verify_key = signedjson.key.encode_verify_key_base64(signedjson.key.get_verify_key(signing_key))\nprint(signed_json[&quot;signatures&quot;][&quot;konqi.work&quot;][&quot;ed25519:a_KAgK&quot;])\nprint(session.put(&quot;https://matrix.konqi.work/_matrix/federation/v1/send/%s&quot; % RANDOM_TXN, json=signed_json, headers={\n    &quot;Authorization&quot;: &quot;X-Matrix origin=%s,key=\\&quot;%s\\&quot;,sig=\\&quot;%s\\&quot;&quot; % (\n        &quot;konqi.work&quot;, &quot;ed25519:a_KAgK&quot;, signed_json[&quot;signatures&quot;][&quot;konqi.work&quot;][&quot;ed25519:a_KAgK&quot;]\n    )\n}).json())\n</code></pre>\n",
+				"msgtype": "m.text"
+			},
+			"m.relates_to": {
+				"event_id": "$8iRVrWZl6wRHnEK0XU3F3T5aESVN5K4_-yONd5xOsD0",
+				"rel_type": "m.replace"
+			},
+			"msgtype": "m.text"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626294939740,
+		"unsigned": {
+			"age": 81834160
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$8iRVrWZl6wRHnEK0XU3F3T5aESVN5K4_-yONd5xOsD0",
+		"type": "m.room.message",
+		"content": {
+			"body": "Hello, so, I'm unable to sign an EDU successfully. I'm getting `{'errcode': 'M_UNAUTHORIZED', 'error': \"Invalid signature for server konqi.work with key ed25519:a_KAgK: Unable to verify signature for konqi.work: <class 'nacl.exceptions.BadSignatureError'> Signature was forged or corrupt\"}`, with the following Python v3 code:\n```\nimport requests\nimport signedjson.key\nimport signedjson.sign\n\nimport dolphin.random\n\nsession = requests.session()\nRANDOM_TXN = dolphin.random.random_string(5)\n\nunsigned_json = {\n    \"method\": \"GET\",\n    \"uri\": \"/target\",\n    \"origin\": \"konqi.work\",\n    \"destination\": \"matrix.org\",\n    \"content\": {\n        \"origin\": \"konqi.work\",\n        \"origin_server_ts\": 0,\n        \"edus\": [\n            {\n                \"edu_type\": \"m.typing\",\n                \"content\": {\n                    \"room_id\": \"!ehXvUhWNASUkSLvAGP:matrix.org\",\n                    \"user_id\": \"@dolphin:konqi.work\",\n                    \"typing\": True\n                }\n            }\n        ]\n    }\n}\nsigning_key = signedjson.key.decode_signing_key_base64(algorithm=\"ed25519\", version=\"a_KAgK\",\n                                                       key_base64=\"REDACTED\")\nsigned_json = signedjson.sign.sign_json(unsigned_json, \"konqi.work\",\n                                        signing_key=signing_key)\nencoded_verify_key = signedjson.key.encode_verify_key_base64(signedjson.key.get_verify_key(signing_key))\nprint(signed_json[\"signatures\"][\"konqi.work\"][\"ed25519:a_KAgK\"])\nprint(session.put(\"https://matrix.konqi.work/_matrix/federation/v1/send/%s\" % RANDOM_TXN, json=signed_json, headers={\n    \"Authorization\": \"X-Matrix origin=%s,key=\\\"%s\\\",sig=\\\"%s\\\"\" % (\n        \"konqi.work\", \"ed25519:a_KAgK\", signed_json[\"signatures\"][\"konqi.work\"][\"ed25519:a_KAgK\"]\n    )\n}).json())\n```",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "<p>Hello, so, I'm unable to sign an EDU successfully. I'm getting <code>{'errcode': 'M_UNAUTHORIZED', 'error': &quot;Invalid signature for server konqi.work with key ed25519:a_KAgK: Unable to verify signature for konqi.work: &lt;class 'nacl.exceptions.BadSignatureError'&gt; Signature was forged or corrupt&quot;}</code>, with the following Python v3 code:</p>\n<pre><code>import requests\nimport signedjson.key\nimport signedjson.sign\n\nimport dolphin.random\n\nsession = requests.session()\nRANDOM_TXN = dolphin.random.random_string(5)\n\nunsigned_json = {\n    &quot;method&quot;: &quot;GET&quot;,\n    &quot;uri&quot;: &quot;/target&quot;,\n    &quot;origin&quot;: &quot;konqi.work&quot;,\n    &quot;destination&quot;: &quot;matrix.org&quot;,\n    &quot;content&quot;: {\n        &quot;origin&quot;: &quot;konqi.work&quot;,\n        &quot;origin_server_ts&quot;: 0,\n        &quot;edus&quot;: [\n            {\n                &quot;edu_type&quot;: &quot;m.typing&quot;,\n                &quot;content&quot;: {\n                    &quot;room_id&quot;: &quot;!ehXvUhWNASUkSLvAGP:matrix.org&quot;,\n                    &quot;user_id&quot;: &quot;@dolphin:konqi.work&quot;,\n                    &quot;typing&quot;: True\n                }\n            }\n        ]\n    }\n}\nsigning_key = signedjson.key.decode_signing_key_base64(algorithm=&quot;ed25519&quot;, version=&quot;a_KAgK&quot;,\n                                                       key_base64=&quot;REDACTED&quot;)\nsigned_json = signedjson.sign.sign_json(unsigned_json, &quot;konqi.work&quot;,\n                                        signing_key=signing_key)\nencoded_verify_key = signedjson.key.encode_verify_key_base64(signedjson.key.get_verify_key(signing_key))\nprint(signed_json[&quot;signatures&quot;][&quot;konqi.work&quot;][&quot;ed25519:a_KAgK&quot;])\nprint(session.put(&quot;https://matrix.konqi.work/_matrix/federation/v1/send/%s&quot; % RANDOM_TXN, json=signed_json, headers={\n    &quot;Authorization&quot;: &quot;X-Matrix origin=%s,key=\\&quot;%s\\&quot;,sig=\\&quot;%s\\&quot;&quot; % (\n        &quot;konqi.work&quot;, &quot;ed25519:a_KAgK&quot;, signed_json[&quot;signatures&quot;][&quot;konqi.work&quot;][&quot;ed25519:a_KAgK&quot;]\n    )\n}).json())\n</code></pre>\n",
+			"msgtype": "m.text"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626294861563,
+		"unsigned": {
+			"age": 81912337,
+			"m.relations": {
+				"m.replace": {
+					"event_id": "$YP5RYPt1Fbjicb8-y2uAAVyLtXRLGg0-JmlQPb8CAEA",
+					"origin_server_ts": 1626294939740,
+					"sender": "@dolphin:konqi.work"
+				}
+			}
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$WETd0kNpRNgAE29MW6ZPEvabk_iIS7XghhdizaBTqJ8",
+		"type": "m.room.member",
+		"content": {
+			"avatar_url": "mxc://konqi.work/WViVSRozjBTfeqRejQjqhNuU",
+			"displayname": "dolphin",
+			"membership": "join"
+		},
+		"sender": "@dolphin:konqi.work",
+		"origin_server_ts": 1626294766061,
+		"unsigned": {
+			"age": 49
+		},
+		"state_key": "@dolphin:konqi.work",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$1zlpZtYp1NKJqLRAsRaz9P5oxCythfWNByykZJYDTE0",
+		"type": "m.room.member",
+		"content": {
+			"membership": "ban",
+			"reason": "code of conduct violations"
+		},
+		"sender": "@abuse:matrix.org",
+		"origin_server_ts": 1626278215427,
+		"unsigned": {
+			"replaces_state": "$7bpEZc9HgBd56zonB3nWMvEs7wo-dCq9u4Ovi6Nsdgw",
+			"age": 98416090
+		},
+		"state_key": "@gosnells:matrix.org",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$r3dr8D6YGIazYj__vakhvPlVfowbB2M6QpIGZ1BbzpI",
+		"type": "m.room.member",
+		"content": {
+			"membership": "leave"
+		},
+		"sender": "@paoesco:hubesco.com",
+		"origin_server_ts": 1626276487171,
+		"unsigned": {
+			"prev_content": {
+				"avatar_url": null,
+				"displayname": "Pao",
+				"membership": "join"
+			},
+			"prev_sender": "@paoesco:hubesco.com",
+			"replaces_state": "$qi7CA2T1HUmBWkOmh-p1PiTu1BrZo0f3fuZGEzzdIzg",
+			"age": 100144346
+		},
+		"state_key": "@paoesco:hubesco.com",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$zvNcpBC3kR8K8uh2Nu_cPIBUiPhDeolRshAT4WbQqpE",
+		"type": "m.room.member",
+		"content": {
+			"avatar_url": "mxc://1in1.net/dGFAgPgyavcdZQSbOFAHgmGe",
+			"displayname": "Kevin",
+			"membership": "join"
+		},
+		"sender": "@kevin:1in1.net",
+		"origin_server_ts": 1626268242845,
+		"unsigned": {
+			"age": 132
+		},
+		"state_key": "@kevin:1in1.net",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$aEGSkXBYBKM_3_dwUfpJg7URQ324rjNq1F4MZx9tg_A",
+		"type": "m.room.member",
+		"content": {
+			"avatar_url": "mxc://matrix.org/BEBPvOTeqbVzjXObecxMhvwp",
+			"displayname": "Paulo Pinto",
+			"membership": "join"
+		},
+		"sender": "@psrpinto:matrix.org",
+		"origin_server_ts": 1626256184851,
+		"unsigned": {
+			"replaces_state": "$MHkRw9SIzFWbEvs4Fx_F5GKlwqy8oNJ2_I44NaGZI4k",
+			"age": 120446666
+		},
+		"state_key": "@psrpinto:matrix.org",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$nwYqHLaVkRazhhLwNU-qQO_8Mem-OC6E5WbJmph44aU",
+		"type": "m.room.member",
+		"content": {
+			"avatar_url": "mxc://matrix.org/NZGChxcCXbBvgkCNZTLXlpux",
+			"displayname": "Administrator",
+			"membership": "join"
+		},
+		"sender": "@abuse:matrix.org",
+		"origin_server_ts": 1626252188509,
+		"unsigned": {
+			"replaces_state": "$n0lyIuAdHVNWYawPqMZqZC8n94QcUohoBuKpXUhf-3M",
+			"age": 124443008
+		},
+		"state_key": "@abuse:matrix.org",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$Tof2bZweGLQB61U-cigJ3ZPJf8D_paQsTtpBsP1cygc",
+		"type": "m.reaction",
+		"content": {
+			"m.relates_to": {
+				"event_id": "$Tydl4SsCJl33MV86SUJHcwX7mgkcRsnTcgSYovFZglA",
+				"key": "👋",
+				"rel_type": "m.annotation"
+			}
+		},
+		"sender": "@niko:chat.tgp.io",
+		"origin_server_ts": 1626199659219,
+		"unsigned": {
+			"age": 177114681
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$XfxnIkb5oV3vEgMwI-x6jcMTS6HpNKTsTRdlbRkbNqY",
+		"type": "m.room.member",
+		"content": {
+			"displayname": "ash",
+			"membership": "join"
+		},
+		"sender": "@ashok-arora:matrix.org",
+		"origin_server_ts": 1626199435098,
+		"unsigned": {
+			"replaces_state": "$LQIiOfPpPVU6tUCwm06s34PUbRpLlFei1ZWF32sFw-M",
+			"age": 177196419
+		},
+		"state_key": "@ashok-arora:matrix.org",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$Tydl4SsCJl33MV86SUJHcwX7mgkcRsnTcgSYovFZglA",
+		"type": "m.room.message",
+		"content": {
+			"body": "Hello",
+			"msgtype": "m.text"
+		},
+		"sender": "@paoesco:hubesco.com",
+		"origin_server_ts": 1626199384426,
+		"unsigned": {
+			"age": 177389474,
+			"m.relations": {
+				"m.annotation": {
+					"chunk": [
+						{
+							"type": "m.reaction",
+							"key": "👋",
+							"count": 1
+						}
+					]
+				}
+			}
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$qi7CA2T1HUmBWkOmh-p1PiTu1BrZo0f3fuZGEzzdIzg",
+		"type": "m.room.member",
+		"content": {
+			"avatar_url": null,
+			"displayname": "Pao",
+			"membership": "join"
+		},
+		"sender": "@paoesco:hubesco.com",
+		"origin_server_ts": 1626199314838,
+		"unsigned": {
+			"age": 72
+		},
+		"state_key": "@paoesco:hubesco.com",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$3D-Fuct_Qko8IZVIvnpTfw36i-MMI2sN02YJ_KXkWpY",
+		"type": "m.room.message",
+		"content": {
+			"body": "> <@hubert:uhoreg.ca> karthick_ios: read this ^^\n\nWill try this out. ",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "<mx-reply><blockquote><a href=\"https://matrix.to/#/!jxlRxnrZCsjpjDubDX:matrix.org/$6iYdPJEso0DQFMvmABur7m15ipZnBmBPo2u_hePGhEo?via=matrix.org&via=lant.uk&via=imbitbu.de\">In reply to</a> <a href=\"https://matrix.to/#/@hubert:uhoreg.ca\">@hubert:uhoreg.ca</a><br><a href=\"https://matrix.to/#/@karthick_ios:matrix.org\">karthick_ios</a>: read this ^^</blockquote></mx-reply>Will try this out.",
+			"m.relates_to": {
+				"m.in_reply_to": {
+					"event_id": "$6iYdPJEso0DQFMvmABur7m15ipZnBmBPo2u_hePGhEo"
+				}
+			},
+			"msgtype": "m.text"
+		},
+		"sender": "@karthick_ios:matrix.org",
+		"origin_server_ts": 1626189733327,
+		"unsigned": {
+			"age": 187040573
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$6iYdPJEso0DQFMvmABur7m15ipZnBmBPo2u_hePGhEo",
+		"type": "m.room.message",
+		"content": {
+			"body": "> <@hubert:uhoreg.ca> With a limit of 5, I'd expect that you'd still mostly be seeing state events from the creation of the room.  You can paginate forward, using the `end` field as your new `from` parameter, or you can set a filter so that it only returns `m.room.message` events.\n\nkarthick_ios: read this ^^",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "<mx-reply><blockquote><a href=\"https://matrix.to/#/!jxlRxnrZCsjpjDubDX:matrix.org/$SnDdN5ir5gq1Dkh1mIlO4dQRmwBQ9kgoJT3CWnddLuc?via=matrix.org&via=libera.chat&via=privacytools.io\">In reply to</a> <a href=\"https://matrix.to/#/@hubert:uhoreg.ca\">@hubert:uhoreg.ca</a><br>With a limit of 5, I'd expect that you'd still mostly be seeing state events from the creation of the room.  You can paginate forward, using the <code>end</code> field as your new <code>from</code> parameter, or you can set a filter so that it only returns <code>m.room.message</code> events.</blockquote></mx-reply><a href=\"https://matrix.to/#/@karthick_ios:matrix.org\">karthick_ios</a>: read this ^^",
+			"m.relates_to": {
+				"m.in_reply_to": {
+					"event_id": "$SnDdN5ir5gq1Dkh1mIlO4dQRmwBQ9kgoJT3CWnddLuc"
+				}
+			},
+			"msgtype": "m.text"
+		},
+		"sender": "@hubert:uhoreg.ca",
+		"origin_server_ts": 1626188407093,
+		"unsigned": {
+			"age": 188366807
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$m09QRyR_H2ZqymQ8-TnotfmRJptbzyNcs9jtxahdtH0",
+		"type": "m.room.message",
+		"content": {
+			"body": "uhoreg💉💉 Yes i have seen people joining, but unable to view their text messages",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "<a href=\"https://matrix.to/#/@hubert:uhoreg.ca\">uhoreg💉💉</a> Yes i have seen people joining, but unable to view their text messages",
+			"msgtype": "m.text"
+		},
+		"sender": "@karthick_ios:matrix.org",
+		"origin_server_ts": 1626187961574,
+		"unsigned": {
+			"age": 188812326
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$3RdykzIniq0gjItmS3fYkPmcJpt0ELRU5Ur3NRK2rYA",
+		"type": "m.room.message",
+		"content": {
+			"body": "Yeah.  Like I said, you're seeing a bunch of state events from around the time of the room creation.  There's the create event, and then a bunch of people joining.",
+			"msgtype": "m.text"
+		},
+		"sender": "@hubert:uhoreg.ca",
+		"origin_server_ts": 1626187825621,
+		"unsigned": {
+			"age": 188948279
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$ZCVYwbXDN06DsDbXcdBMlAXO9nxW7xgms_gcuQ7Gouc",
+		"type": "m.room.message",
+		"content": {
+			"body": "also code blocks",
+			"msgtype": "m.text"
+		},
+		"sender": "@travis:t2l.io",
+		"origin_server_ts": 1626187690616,
+		"unsigned": {
+			"age": 189083284
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$h5MWkk0o6DW9wprvr_dPHpVpv8O25owBL5FBFQgZOyU",
+		"type": "m.room.message",
+		"content": {
+			"body": "Please use a different room for testing, otherwise you'll end up pinging people by accident.",
+			"msgtype": "m.text"
+		},
+		"sender": "@travis:t2l.io",
+		"origin_server_ts": 1626187686814,
+		"unsigned": {
+			"age": 189087086
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$QFF8R_qu8gAEqVXEa7DnpQu8nVia9O9xNJhaJbOjpEQ",
+		"type": "m.room.message",
+		"content": {
+			"body": "uhoreg💉💉: \n\nResponse:\n\n{\n    \"chunk\": [\n        {\n            \"type\": \"m.room.create\",\n            \"room_id\": \"!OGEhHVWSdvArJzumhm:matrix.org\",\n            \"sender\": \"@abuse:matrix.org\",\n            \"content\": {\n                \"room_version\": \"5\",\n                \"predecessor\": {\n                    \"room_id\": \"!QtykxKocfZaZOUrTwp:matrix.org\",\n                    \"event_id\": \"$1574383780225BOSWP:matrix.org\"\n                },\n                \"creator\": \"@abuse:matrix.org\"\n            },\n            \"state_key\": \"\",\n            \"origin_server_ts\": 1574383780519,\n            \"unsigned\": {\n                \"age\": 51803534228\n            },\n            \"event_id\": \"$MaPUZG2fNleIE_gUYDmOy-nj0Zom8mQ5FNM7gEAVI6I\",\n            \"user_id\": \"@abuse:matrix.org\",\n            \"age\": 51803534228\n        },\n        {\n            \"content\": {\n                \"displayname\": \"weinstockzarger94\",\n                \"membership\": \"join\"\n            },\n            \"origin_server_ts\": 1624874582240,\n            \"room_id\": \"!OGEhHVWSdvArJzumhm:matrix.org\",\n            \"sender\": \"@weinstockzarger94:matrix.neaweb.ch\",\n            \"state_key\": \"@weinstockzarger94:matrix.neaweb.ch\",\n            \"type\": \"m.room.member\",\n            \"unsigned\": {\n                \"age\": 1312732507\n            },\n            \"event_id\": \"$TlPynhkoupQbNmJxq0DkkaWe3ogzH80N60MgkIhZ3lQ\",\n            \"user_id\": \"@weinstockzarger94:matrix.neaweb.ch\",\n            \"age\": 1312732507\n        },\n        {\n            \"content\": {\n                \"displayname\": \"tristramjasper15\",\n                \"membership\": \"join\"\n            },\n            \"origin_server_ts\": 1624874674812,\n            \"room_id\": \"!OGEhHVWSdvArJzumhm:matrix.org\",\n            \"sender\": \"@tristramjasper15:matrix.neaweb.ch\",\n            \"state_key\": \"@tristramjasper15:matrix.neaweb.ch\",\n            \"type\": \"m.room.member\",\n            \"unsigned\": {\n                \"age\": 1312639935\n            },\n            \"event_id\": \"$YmRBiA5kzz5dc6CG0Rg3xraRIyFPt93cIDGZ41edxJg\",\n            \"user_id\": \"@tristramjasper15:matrix.neaweb.ch\",\n            \"age\": 1312639935\n        },\n        {\n            \"content\": {\n                \"displayname\": \"emerarosette\",\n                \"membership\": \"join\"\n            },\n            \"origin_server_ts\": 1624980036302,\n            \"room_id\": \"!OGEhHVWSdvArJzumhm:matrix.org\",\n            \"sender\": \"@emerarosette:matrix.neaweb.ch\",\n            \"state_key\": \"@emerarosette:matrix.neaweb.ch\",\n            \"type\": \"m.room.member\",\n            \"unsigned\": {\n                \"age\": 1207278445\n            },\n            \"event_id\": \"$3yQpaumAmryctnWH4zuldQVWXH0Ymre6pSrBmXaxhbk\",\n            \"user_id\": \"@emerarosette:matrix.neaweb.ch\",\n            \"age\": 1207278445\n        },\n        {\n            \"type\": \"m.room.member\",\n            \"room_id\": \"!OGEhHVWSdvArJzumhm:matrix.org\",\n            \"sender\": \"@abuse:matrix.org\",\n            \"content\": {\n                \"membership\": \"join\",\n                \"displayname\": \"Abuse Management\",\n                \"avatar_url\": \"mxc://matrix.org/NZGChxcCXbBvgkCNZTLXlpux\"\n            },\n            \"state_key\": \"@abuse:matrix.org\",\n            \"origin_server_ts\": 1574383780829,\n            \"unsigned\": {\n                \"age\": 51803533918\n            },\n            \"event_id\": \"$3Z5K-4YJq0uYYAIplFHm7V8vRZgfjCoRV74N8wVWiWw\",\n            \"user_id\": \"@abuse:matrix.org\",\n            \"age\": 51803533918\n        }\n    ],\n    \"start\": \"s853506513_0_0_0_0_0_0_0_0\",\n    \"end\": \"t2-1164106105_0_0_0_0_0_0_0_0\"\n}",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "<p><a href=\"https://matrix.to/#/@hubert:uhoreg.ca\">uhoreg💉💉</a>:</p>\n<p>Response:</p>\n<p>{<br>&quot;chunk&quot;: [<br>{<br>&quot;type&quot;: &quot;m.room.create&quot;,<br>&quot;room_id&quot;: &quot;!OGEhHVWSdvArJzumhm:matrix.org&quot;,<br>&quot;sender&quot;: &quot;@abuse:matrix.org&quot;,<br>&quot;content&quot;: {<br>&quot;room_version&quot;: &quot;5&quot;,<br>&quot;predecessor&quot;: {<br>&quot;room_id&quot;: &quot;!QtykxKocfZaZOUrTwp:matrix.org&quot;,<br>&quot;event_id&quot;: &quot;$1574383780225BOSWP:matrix.org&quot;<br>},<br>&quot;creator&quot;: &quot;@abuse:matrix.org&quot;<br>},<br>&quot;state_key&quot;: &quot;&quot;,<br>&quot;origin_server_ts&quot;: 1574383780519,<br>&quot;unsigned&quot;: {<br>&quot;age&quot;: 51803534228<br>},<br>&quot;event_id&quot;: &quot;$MaPUZG2fNleIE_gUYDmOy-nj0Zom8mQ5FNM7gEAVI6I&quot;,<br>&quot;user_id&quot;: &quot;@abuse:matrix.org&quot;,<br>&quot;age&quot;: 51803534228<br>},<br>{<br>&quot;content&quot;: {<br>&quot;displayname&quot;: &quot;weinstockzarger94&quot;,<br>&quot;membership&quot;: &quot;join&quot;<br>},<br>&quot;origin_server_ts&quot;: 1624874582240,<br>&quot;room_id&quot;: &quot;!OGEhHVWSdvArJzumhm:matrix.org&quot;,<br>&quot;sender&quot;: &quot;@weinstockzarger94:matrix.neaweb.ch&quot;,<br>&quot;state_key&quot;: &quot;@weinstockzarger94:matrix.neaweb.ch&quot;,<br>&quot;type&quot;: &quot;m.room.member&quot;,<br>&quot;unsigned&quot;: {<br>&quot;age&quot;: 1312732507<br>},<br>&quot;event_id&quot;: &quot;$TlPynhkoupQbNmJxq0DkkaWe3ogzH80N60MgkIhZ3lQ&quot;,<br>&quot;user_id&quot;: &quot;@weinstockzarger94:matrix.neaweb.ch&quot;,<br>&quot;age&quot;: 1312732507<br>},<br>{<br>&quot;content&quot;: {<br>&quot;displayname&quot;: &quot;tristramjasper15&quot;,<br>&quot;membership&quot;: &quot;join&quot;<br>},<br>&quot;origin_server_ts&quot;: 1624874674812,<br>&quot;room_id&quot;: &quot;!OGEhHVWSdvArJzumhm:matrix.org&quot;,<br>&quot;sender&quot;: &quot;@tristramjasper15:matrix.neaweb.ch&quot;,<br>&quot;state_key&quot;: &quot;@tristramjasper15:matrix.neaweb.ch&quot;,<br>&quot;type&quot;: &quot;m.room.member&quot;,<br>&quot;unsigned&quot;: {<br>&quot;age&quot;: 1312639935<br>},<br>&quot;event_id&quot;: &quot;$YmRBiA5kzz5dc6CG0Rg3xraRIyFPt93cIDGZ41edxJg&quot;,<br>&quot;user_id&quot;: &quot;@tristramjasper15:matrix.neaweb.ch&quot;,<br>&quot;age&quot;: 1312639935<br>},<br>{<br>&quot;content&quot;: {<br>&quot;displayname&quot;: &quot;emerarosette&quot;,<br>&quot;membership&quot;: &quot;join&quot;<br>},<br>&quot;origin_server_ts&quot;: 1624980036302,<br>&quot;room_id&quot;: &quot;!OGEhHVWSdvArJzumhm:matrix.org&quot;,<br>&quot;sender&quot;: &quot;@emerarosette:matrix.neaweb.ch&quot;,<br>&quot;state_key&quot;: &quot;@emerarosette:matrix.neaweb.ch&quot;,<br>&quot;type&quot;: &quot;m.room.member&quot;,<br>&quot;unsigned&quot;: {<br>&quot;age&quot;: 1207278445<br>},<br>&quot;event_id&quot;: &quot;$3yQpaumAmryctnWH4zuldQVWXH0Ymre6pSrBmXaxhbk&quot;,<br>&quot;user_id&quot;: &quot;@emerarosette:matrix.neaweb.ch&quot;,<br>&quot;age&quot;: 1207278445<br>},<br>{<br>&quot;type&quot;: &quot;m.room.member&quot;,<br>&quot;room_id&quot;: &quot;!OGEhHVWSdvArJzumhm:matrix.org&quot;,<br>&quot;sender&quot;: &quot;@abuse:matrix.org&quot;,<br>&quot;content&quot;: {<br>&quot;membership&quot;: &quot;join&quot;,<br>&quot;displayname&quot;: &quot;Abuse Management&quot;,<br>&quot;avatar_url&quot;: &quot;mxc://matrix.org/NZGChxcCXbBvgkCNZTLXlpux&quot;<br>},<br>&quot;state_key&quot;: &quot;@abuse:matrix.org&quot;,<br>&quot;origin_server_ts&quot;: 1574383780829,<br>&quot;unsigned&quot;: {<br>&quot;age&quot;: 51803533918<br>},<br>&quot;event_id&quot;: &quot;$3Z5K-4YJq0uYYAIplFHm7V8vRZgfjCoRV74N8wVWiWw&quot;,<br>&quot;user_id&quot;: &quot;@abuse:matrix.org&quot;,<br>&quot;age&quot;: 51803533918<br>}<br>],<br>&quot;start&quot;: &quot;s853506513_0_0_0_0_0_0_0_0&quot;,<br>&quot;end&quot;: &quot;t2-1164106105_0_0_0_0_0_0_0_0&quot;<br>}</p>\n",
+			"msgtype": "m.text"
+		},
+		"sender": "@karthick_ios:matrix.org",
+		"origin_server_ts": 1626187657156,
+		"unsigned": {
+			"age": 190486416
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$SnDdN5ir5gq1Dkh1mIlO4dQRmwBQ9kgoJT3CWnddLuc",
+		"type": "m.room.message",
+		"content": {
+			"body": "With a limit of 5, I'd expect that you'd still mostly be seeing state events from the creation of the room.  You can paginate forward, using the `end` field as your new `from` parameter, or you can set a filter so that it only returns `m.room.message` events.",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "With a limit of 5, I'd expect that you'd still mostly be seeing state events from the creation of the room.  You can paginate forward, using the <code>end</code> field as your new <code>from</code> parameter, or you can set a filter so that it only returns <code>m.room.message</code> events.",
+			"msgtype": "m.text"
+		},
+		"sender": "@hubert:uhoreg.ca",
+		"origin_server_ts": 1626187572389,
+		"unsigned": {
+			"age": 190571183
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$1mCZ-5wgYlRnQgXZB8AO8st8kW25AOLvvfZabEyb2hQ",
+		"type": "m.room.message",
+		"content": {
+			"body": "I have set the limit to 5 but unable to view the message parameters",
+			"msgtype": "m.text"
+		},
+		"sender": "@karthick_ios:matrix.org",
+		"origin_server_ts": 1626187441982,
+		"unsigned": {
+			"age": 190701590
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$DeOOREywTJhnllRutEV1U6iO8s8GAE4MXnybUqlQfzw",
+		"type": "m.room.message",
+		"content": {
+			"body": "May i set the limit to 5?",
+			"msgtype": "m.text"
+		},
+		"sender": "@karthick_ios:matrix.org",
+		"origin_server_ts": 1626187297834,
+		"unsigned": {
+			"age": 190845738
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$rfjDLPWnFgvvaLUyKnmB2dJ00S01QUK1ydNRV24gZNA",
+		"type": "m.room.message",
+		"content": {
+			"body": "You asked for one event (`limit=1`), so it gave you one event, which happened to be the create event.",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "You asked for one event (<code>limit=1</code>), so it gave you one event, which happened to be the create event.",
+			"msgtype": "m.text"
+		},
+		"sender": "@hubert:uhoreg.ca",
+		"origin_server_ts": 1626187268791,
+		"unsigned": {
+			"age": 190874781
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$NnL-nEWrKzPEsLVOq6Z7WJSmNnVCkhb5cC17kUcCkP0",
+		"type": "m.room.message",
+		"content": {
+			"body": "Unable to view the text messages",
+			"msgtype": "m.text"
+		},
+		"sender": "@karthick_ios:matrix.org",
+		"origin_server_ts": 1626187216690,
+		"unsigned": {
+			"age": 190926882
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$OziyC918gRxDMCvFx5ZdC2AsqBe6UPyKFjLkMP94kJY",
+		"type": "m.room.message",
+		"content": {
+			"body": "I have removed the filter now.\nLink: https://matrix.org/_matrix/client/r0/rooms/!OGEhHVWSdvArJzumhm:matrix.org/messages?from=s853506513&dir=f&limit=1\n\nResponse:\n{\n    \"chunk\": [\n        {\n            \"type\": \"m.room.create\",\n            \"room_id\": \"!OGEhHVWSdvArJzumhm:matrix.org\",\n            \"sender\": \"@abuse:matrix.org\",\n            \"content\": {\n                \"room_version\": \"5\",\n                \"predecessor\": {\n                    \"room_id\": \"!QtykxKocfZaZOUrTwp:matrix.org\",\n                    \"event_id\": \"$1574383780225BOSWP:matrix.org\"\n                },\n                \"creator\": \"@abuse:matrix.org\"\n            },\n            \"state_key\": \"\",\n            \"origin_server_ts\": 1574383780519,\n            \"unsigned\": {\n                \"age\": 51803340615\n            },\n            \"event_id\": \"$MaPUZG2fNleIE_gUYDmOy-nj0Zom8mQ5FNM7gEAVI6I\",\n            \"user_id\": \"@abuse:matrix.org\",\n            \"age\": 51803340615\n        }\n    ],\n    \"start\": \"s853506513_0_0_0_0_0_0_0_0\",\n    \"end\": \"t1-1164106101_0_0_0_0_0_0_0_0\"\n}",
+			"msgtype": "m.text"
+		},
+		"sender": "@karthick_ios:matrix.org",
+		"origin_server_ts": 1626187190135,
+		"unsigned": {
+			"age": 190953437
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$Cd8g2XlDxxKudOL_iwKHEd4DZSiu4zEpaXfO_mYZipE",
+		"type": "m.room.message",
+		"content": {
+			"body": "omit the filter or specify one which is inclusive of the things you want.",
+			"msgtype": "m.text"
+		},
+		"sender": "@x:riot.ovh",
+		"origin_server_ts": 1626186992798,
+		"unsigned": {
+			"age": 191150774
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$tI3bJT9jtgpy2EY0STZmi3AVBLx9iDjBPCQBAKG04tk",
+		"type": "m.room.message",
+		"content": {
+			"body": "For text messages what should i do?",
+			"msgtype": "m.text"
+		},
+		"sender": "@karthick_ios:matrix.org",
+		"origin_server_ts": 1626186977421,
+		"unsigned": {
+			"age": 191166151
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$jdndZY9UmZrPH8h5cA68_bIVXxn3XjLKWW49EHXJ4PM",
+		"type": "m.room.message",
+		"content": {
+			"body": "if the room is encrypted the server won't be able to see whether a message has media or not, so will not be able to include them",
+			"msgtype": "m.text"
+		},
+		"sender": "@x:riot.ovh",
+		"origin_server_ts": 1626186961982,
+		"unsigned": {
+			"age": 191181590
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$8GmQ6fZ_nPry4XWYWaUpYwe2M25SEujw7sdGtNtT4fA",
+		"type": "m.room.message",
+		"content": {
+			"body": "so those won't be text messages, those will be media messages only",
+			"msgtype": "m.text"
+		},
+		"sender": "@x:riot.ovh",
+		"origin_server_ts": 1626186884854,
+		"unsigned": {
+			"age": 191258718
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$-trt0LmKLpYuoMA8Tjh1ZcaDiUyiqzcx9EoOwgM1QSU",
+		"type": "m.room.message",
+		"content": {
+			"body": "Your filter says to only include messages which contain a URL",
+			"msgtype": "m.text"
+		},
+		"sender": "@x:riot.ovh",
+		"origin_server_ts": 1626186877326,
+		"unsigned": {
+			"age": 191266246
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$Io5pejRqvc3OBRwzJKZ_qb3eUoJqXoGe_qEmZYUsfzU",
+		"type": "m.room.message",
+		"content": {
+			"body": "do let me know",
+			"msgtype": "m.text"
+		},
+		"sender": "@karthick_ios:matrix.org",
+		"origin_server_ts": 1626186863786,
+		"unsigned": {
+			"age": 191279786
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$EJ7rwL771LbrIXVqcySH4NhAIxEIVQrVu21PlcKwXX8",
+		"type": "m.room.message",
+		"content": {
+			"body": " * Hi,\nI am unable to view the message text on this get method (receiving messages):\nScreenshot given above ",
+			"m.new_content": {
+				"body": "Hi,\nI am unable to view the message text on this get method (receiving messages):\nScreenshot given above ",
+				"msgtype": "m.text"
+			},
+			"m.relates_to": {
+				"event_id": "$Ozx7o4dOXgS2eIyavRozMC57pyglnv310ne9s4JgJG4",
+				"rel_type": "m.replace"
+			},
+			"msgtype": "m.text"
+		},
+		"sender": "@karthick_ios:matrix.org",
+		"origin_server_ts": 1626186834786,
+		"unsigned": {
+			"age": 191308786
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$Ozx7o4dOXgS2eIyavRozMC57pyglnv310ne9s4JgJG4",
+		"type": "m.room.message",
+		"content": {
+			"body": "Hi,\nI am unable to view the message text on this get method (receiving messages):\nScreenshot given above ",
+			"msgtype": "m.text"
+		},
+		"sender": "@karthick_ios:matrix.org",
+		"origin_server_ts": 1626186792785,
+		"unsigned": {
+			"age": 191350787,
+			"m.relations": {
+				"m.replace": {
+					"event_id": "$EJ7rwL771LbrIXVqcySH4NhAIxEIVQrVu21PlcKwXX8",
+					"origin_server_ts": 1626186834786,
+					"sender": "@karthick_ios:matrix.org"
+				}
+			}
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$yE3OQ38eQY3UNjU2l_0KGogpd4PJnJjckXkCOcCyDw8",
+		"type": "m.room.message",
+		"content": {
+			"body": "textmessage.png",
+			"info": {
+				"h": 862,
+				"mimetype": "image/png",
+				"size": 383356,
+				"thumbnail_info": {
+					"h": 522,
+					"mimetype": "image/png",
+					"size": 87346,
+					"w": 800
+				},
+				"thumbnail_url": "mxc://matrix.org/UXJUzHFcjmtiyoGRmPfpsYlK",
+				"w": 1319
+			},
+			"msgtype": "m.image",
+			"url": "mxc://matrix.org/HTDMQTPmGVNCpIDxEDMmjUtn"
+		},
+		"sender": "@karthick_ios:matrix.org",
+		"origin_server_ts": 1626186787533,
+		"unsigned": {
+			"age": 191356039
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$EV09y07bQvYHt2rg7fLw0xpV54ojrMjmygLtBYaPGMA",
+		"type": "m.room.member",
+		"content": {
+			"avatar_url": "mxc://matrix.org/gxTGtQXqsuHGwnjKjrZkgfRG",
+			"displayname": "karthick_ios",
+			"membership": "join"
+		},
+		"sender": "@karthick_ios:matrix.org",
+		"origin_server_ts": 1626185881847,
+		"unsigned": {
+			"replaces_state": "$Wz2fse-qkDNN2ryrlRh8P0QdhOlpMY7BTGhfB1GdPek",
+			"age": 190749670
+		},
+		"state_key": "@karthick_ios:matrix.org",
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$nSsojBeYxm0jGPitMkaOkDBFwVJ--Y_nIdPwPFncsPs",
+		"type": "m.reaction",
+		"content": {
+			"m.relates_to": {
+				"event_id": "$iL_Fp65q2guEULo8uPjcV2P61RlLhLJ_ncdjjCIj5YM",
+				"key": "👍️",
+				"rel_type": "m.annotation"
+			}
+		},
+		"sender": "@and1:matrix.org",
+		"origin_server_ts": 1626182670993,
+		"unsigned": {
+			"age": 195472579
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$iL_Fp65q2guEULo8uPjcV2P61RlLhLJ_ncdjjCIj5YM",
+		"type": "m.room.message",
+		"content": {
+			"body": "And1: I asked the same question, and the answer I got was that it is not currently possible. You could add a \"type\" property in \"creation_content\" similar to how spaces work, but that will unfortunately not hide the room.",
+			"format": "org.matrix.custom.html",
+			"formatted_body": "<a href=\"https://matrix.to/#/@and1:matrix.org\">And1</a>: I asked the same question, and the answer I got was that it is not currently possible. You could add a &quot;type&quot; property in &quot;creation_content&quot; similar to how spaces work, but that will unfortunately not hide the room.",
+			"msgtype": "m.text"
+		},
+		"sender": "@jakobvarmose:ss.crypta.io",
+		"origin_server_ts": 1626182209505,
+		"unsigned": {
+			"age": 195934067,
+			"m.relations": {
+				"m.annotation": {
+					"chunk": [
+						{
+							"type": "m.reaction",
+							"key": "👍️",
+							"count": 1
+						}
+					]
+				}
+			}
+		},
+		"state_key": null,
+		"prev_content": null
+	},
+	{
+		"room_id": "!jxlRxnrZCsjpjDubDX:matrix.org",
+		"event_id": "$oPdXT6PcIsNDi2RQvKhzgpfOSHJfCP_cAGAJ1_E1iOA",
+		"type": "m.room.message",
+		"content": {
+			"body": "Hey, I can't find good-first-issue in synapse, what's a good way to start?",
+			"msgtype": "m.text"
+		},
+		"sender": "@ashok-arora:matrix.org",
+		"origin_server_ts": 1626182099153,
+		"unsigned": {
+			"age": 196044419
+		},
+		"state_key": null,
+		"prev_content": null
+	}
+]
